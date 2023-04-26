@@ -17,16 +17,16 @@
 	};
 </script>
 
-<div class="pt-14 px-8 mx-auto max-w-xl">
+<div class="pt-14 px-4 sm:px-8 mx-auto max-w-xl">
 	<div class="flex flex-row mb-8">
-		<img src={oscar} alt="Cadena Logo" class=" h-16 ml-7 mr-4" />
+		<img src={oscar} alt="Cadena Logo" class="h-16 sm:h-24 ml-7 mr-4" />
 		<h1 class="text-3xl font-bold text-gray-900">Oscar Wilde Quotations</h1>
 	</div>
-	<div class="p-8 bg-slate-800 min-h-[240px] rounded-2xl flex flex-col items-center">
+	<div class="p-4 sm:p-8 bg-slate-800 min-h-[240px] rounded-2xl flex flex-col items-center">
 		<form on:submit|preventDefault={() => handleSubmit()} class="w-full max-w-lg">
 			<div class="pb-2 flex items-center border-b-2 border-orange-600">
 				<input
-					class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 leading-tight focus:outline-none"
+					class=" text-sm sm:text-base appearance-none bg-transparent border-none w-full text-white mr-3 py-1 leading-tight focus:outline-none"
 					type="text"
 					placeholder="Ask Oscar to quote on any topic."
 					bind:value={prompt}

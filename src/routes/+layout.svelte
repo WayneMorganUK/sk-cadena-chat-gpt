@@ -2,6 +2,10 @@
 	import '../app.postcss';
 </script>
 
-<div class="h-screen bg-zinc-400">
-	<slot />
-</div>
+<slot />
+
+<style lang="postcss">
+	:global(html) {
+		background-color: theme(colors.fuchsia.100);
+	}
+</style>
